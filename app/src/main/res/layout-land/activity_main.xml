@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_grid"
+        android:useDefaultMargins="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/new_game_button"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button style="@style/LightButton"/>
+        <Button style="@style/LightButton"/>
+        <Button style="@style/LightButton"/>
+        <Button style="@style/LightButton"/>
+
+        <Button
+            style="@style/LightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp" />
+        <Button style="@style/LightButton"/>
+        <Button style="@style/LightButton"/>
+        <Button style="@style/LightButton"/>
+        <Button style="@style/LightButton"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/new_game_button"
+        style="@style/GameOptionButton"
+        android:layout_marginEnd="44dp"
+        android:onClick="onNewGameClick"
+        android:text="@string/new_game"
+        app:layout_constraintLeft_toRightOf="@+id/light_grid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/light_grid"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help_button"
+        style="@style/GameOptionButton"
+        android:onClick="onHelpClick"
+        android:text="@string/help_button"
+        app:layout_constraintLeft_toLeftOf="@+id/new_game_button"
+        app:layout_constraintRight_toRightOf="@id/new_game_button"
+        app:layout_constraintTop_toBottomOf="@id/new_game_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
