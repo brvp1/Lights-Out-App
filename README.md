@@ -1,12 +1,11 @@
-# Study FlashCards App
+# Lights Out App
 
-This application helps the user create and manage question sets for study. 
-The app uses Room/SQLite for data storage.
+Lights Out is an Android (Java) Application.
+The purpose of the game is to turn all the lights out (turn all the squares black) by tapping in the squares. 
 
-# How it works: 
-The Subject screen lists the available subjects. When the user selects a subject, the questions are displayed on the Question screen.
-The user can cycle through the questions and show or hide the answers. 
-Pressing the Up button (left arrow) in the app bar returns to the Subject screen.
+Each tap turns the lights on or off in the square which is tapped as well as the orthogonally adjacent squares. 
+The New Game button randomly resets each square to on or off.
 
+Another page displays game instructions, and the user can also choose among different grid colors like red, yellow, orange, and green.
 
-![StudyFlashCardsApp](https://github.com/brvp1/LightOrDark/assets/84357379/1518a3df-aeb3-4bda-9699-d14cc10a3eaf)
+![LightsOutApp](https://github.com/brvp1/Lights-Out-App/assets/84357379/4208974a-cb78-4f2f-80e3-32ecdd817098)
