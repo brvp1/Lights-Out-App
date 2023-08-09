@@ -1,8 +1,9 @@
 # Lights Out App
 
 Lights Out is an Android (Java) Application.
-The purpose of the game is to turn all the lights out (turn all the squares black) by tapping in the squares. 
+The purpose of the game is to turn all the lights out (turn all the squares black) by tapping on the squares. 
 
+# How it works
 Each tap turns the lights on or off in the square which is tapped as well as the orthogonally adjacent squares. 
 The New Game button randomly resets each square to on or off.
 
